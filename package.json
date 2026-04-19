@@ -6,7 +6,7 @@
   "scripts": {
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist",
-    "homepage": "https://github.com/lawriet97/css-dev-store.git",
+    "homepage": "https://https://lawriet97.github.io/css-dev-store",
     "dev": "vite",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
