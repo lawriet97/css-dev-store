@@ -1,6 +1,6 @@
 // appsData.ts
 import type { ElementType } from "react";
-import { LayoutGrid, Cpu, Ghost, Gamepad2, Box, Terminal } from "lucide-react";
+import { LayoutGrid, Cpu} from "lucide-react";
 
 export interface AppData {
   id: string;
@@ -11,75 +11,53 @@ export interface AppData {
   rating: string;
   size: string;
   version: string;
-  iconFallback: ElementType; // Usado caso não tenha imagem
+  iconFallback: ElementType;
   iconUrl: string;
   screenshots: string[];
+  downloadUrl: string; // Campo do link de download mantido
 }
 
 export const storeApps: AppData[] = [
   {
     id: "app-1",
-    name: "SheetsCode Premium",
-    subtitle: "Engenharia do Poder & Automação Mobile",
-    description: "Eleve a gestão e o processamento de dados para o próximo nível. Uma arquitetura móvel robusta desenhada para transformar fluxos de trabalho complexos em interações rápidas e intuitivas direto do seu smartphone. Acompanha dashboards analíticos e integração em tempo real.",
+    name: "Whatsapp Auto Desk",
+    subtitle: "Sua Central de Inteligência e Automação para WhatsApp.",
+    description: "O Auto Desk é a solução definitiva para quem busca escala e organização no atendimento via WhatsApp. Unindo ferramentas poderosas de auto-resposta com uma gestão de CRM de última geração, o programa elimina o trabalho manual e organiza seu fluxo de mensagens de forma intuitiva. Com um motor de sincronização otimizado para alta performance e um sistema inteligente de recompensas por visualização de anúncios, oferecemos o equilíbrio perfeito entre acessibilidade e poder tecnológico. Tome o controle do seu atendimento e escale seu negócio com a precisão que só o Auto Desk oferece.",
     category: "Produtividade",
-    rating: "4.9",
-    size: "45 MB",
+    rating: "4.7",
+    size: "147 MB",
     version: "2.1.0",
     iconFallback: LayoutGrid,
-    iconUrl: "", // Insira sua URL aqui. Ex: "/icons/sheetscode.png"
-    screenshots: ["", "", "", "", ""] // Pode adicionar quantas quiser
+    iconUrl: "./img/icon/icon-whats.png", // De volta ao original
+    screenshots: [
+      "./img/screenshot/whats01.png", // De volta ao original (singular)
+      "./img/screenshot/whats02.png",
+      "./img/screenshot/whats03.png",
+      "./img/screenshot/whats04.png",
+      "./img/screenshot/whats05.png"
+    ],
+    // Link para o download direto via Google Drive
+    downloadUrl: "https://drive.google.com/uc?export=download&id=1Z9t0s5FXD7lKSkdnxtaphlA37tS4St3z"
   },
   {
     id: "app-2",
-    name: "Aetheris ERP",
-    subtitle: "Gestão Simplificada para Empreendedores",
-    description: "Um ecossistema limpo e direto focado em pequenos empreendedores que buscam clareza nas métricas sem o ruído dos sistemas tradicionais. Gerencie fluxo de caixa, estoque e clientes com uma interface que respeita o seu tempo.",
-    category: "Negócios",
-    rating: "5.0",
-    size: "120 MB",
+    name: "Link Escola",
+    subtitle: "Gestão Simplificada para notas e desempenho de alunos",
+    description: "O Link Escola pode ser a solução definitiva para instituições que buscam escala, autonomia e fluidez no ensino via rede local. Unindo um motor de renderização modular — que permite a construção de aulas bloco a bloco — com uma infraestrutura de sincronização LAN, o software elimina a dependência da internet e centraliza a inteligência pedagógica com precisão. Com um sistema de controle de concorrência que impede conflitos de dados e uma interface desenhada para o máximo engajamento (unindo temas divertidos a uma mecânica de recompensas), o Software oferece o equilíbrio entre a robustez técnica e a generosidade de uma ferramenta acessível. Tome o controle do fluxo educacional e escale o aprendizado com a autoridade e o refinamento que só o Link Escola Pro entrega.",
+    category: "Educação",
+    rating: "4.6",
+    size: "122 MB",
     version: "1.0.5",
     iconFallback: Cpu,
-    iconUrl: "",
-    screenshots: ["", "", ""]
-  },
-  {
-    id: "app-3",
-    name: "Star Sowing",
-    subtitle: "Aventura Procedural Espacial",
-    description: "Cultive vida no vazio do espaço sideral. Uma mistura de mecânicas de movimento fluido, parkour em gravidade zero e geração infinita de cenários astronômicos.",
-    category: "Jogos",
-    rating: "4.8",
-    size: "1.2 GB",
-    version: "RC-3",
-    iconFallback: Gamepad2,
-    iconUrl: "",
-    screenshots: ["", "", ""]
-  },
-  {
-    id: "app-4",
-    name: "O Manifesto Secreto",
-    subtitle: "Edição Digital Interativa",
-    description: "Códigos de trapaça e táticas psicológicas para a vida real, agora em um formato digital com ritmo de leitura imersivo, direto e impactante. Domine a engenharia social.",
-    category: "Estilo de Vida",
-    rating: "4.9",
-    size: "15 MB",
-    version: "Edição de Colecionador",
-    iconFallback: Box,
-    iconUrl: "",
-    screenshots: ["", "", ""]
-  },
-  {
-    id: "app-5",
-    name: "BrokenReality",
-    subtitle: "Sincronização de Pensamentos",
-    description: "Uma interface que respira. Aplicativo experimental focado em anotações subliminares e organização de ideias fragmentadas.",
-    category: "Ferramentas",
-    rating: "4.7",
-    size: "32 MB",
-    version: "Beta 0.9",
-    iconFallback: Ghost,
-    iconUrl: "",
-    screenshots: ["", "", ""]
+    iconUrl: "./img/icon/icon-escola.png",
+    screenshots: [
+      "./img/screenshot/img-w01.png", 
+      "./img/screenshot/img-w02.png", 
+      "./img/screenshot/img-w03.png", 
+      "./img/screenshot/img-w04.png", 
+      "./img/screenshot/img-w05.png"
+    ],
+    // Link para o download direto via Google Drive
+    downloadUrl: "https://drive.google.com/uc?export=download&id=1aZRGifwNfMhYMSiGNGWU-lk6jErzndA_"
   }
 ];

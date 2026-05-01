@@ -3,10 +3,11 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "homepage": "https://lawriet97.github.io/css-dev-store",
   "scripts": {
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist",
-    "homepage": "https://https://lawriet97.github.io/css-dev-store",
+    
     "dev": "vite",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
