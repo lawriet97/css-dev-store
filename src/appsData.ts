@@ -37,7 +37,7 @@ export const storeApps: AppData[] = [
       "./img/screenshot/whats05.png"
     ],
     // Link para o download direto via Google Drive
-    downloadUrl: "https://drive.google.com/uc?export=download&id=1Z9t0s5FXD7lKSkdnxtaphlA37tS4St3z"
+    downloadUrl: "https://pub-e8bb082dd1084a6d8d5f90675eab1031.r2.dev/whatsapp-auto-desk-1.0.0-setup.exe"
   },
   {
     id: "app-2",
@@ -58,6 +58,6 @@ export const storeApps: AppData[] = [
       "./img/screenshot/img-w05.png"
     ],
     // Link para o download direto via Google Drive
-    downloadUrl: "https://drive.google.com/uc?export=download&id=1aZRGifwNfMhYMSiGNGWU-lk6jErzndA_"
+    downloadUrl: "https://pub-e8bb082dd1084a6d8d5f90675eab1031.r2.dev/software-escolar-1.0.0-setup.exe"
   }
 ];
